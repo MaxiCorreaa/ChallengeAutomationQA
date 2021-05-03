@@ -7,6 +7,9 @@ Challenge automation qa project for Andina Mercantil
 -Abrir terminal y ejecutar comando: mvn clean
 -Abrir terminal y ejecutar comando: mvn test
 
+# Para el test backend:
+-Importar coleccion en postman y ejecutar.
+
 # Observaciones:
 -Se puede agregar attachment de Allure para screenshots por cada Step.
 -Se puede mejorar la visualizacion del reporte (@Story, @Feature, Enviroments, etc).
