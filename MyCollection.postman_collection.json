@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "81ce485b-6d9c-4db4-81e0-7c46dc95b7ee",
+		"name": "MyCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Challenge QA",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Lagunitas Brewing Co\");\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"761\");\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"7077694495\");\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"1280 N McDowell Blvd\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.openbrewerydb.org/breweries?by_name=Lagunitas_Brewing_Co&by_state=California",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openbrewerydb",
+						"org"
+					],
+					"path": [
+						"breweries"
+					],
+					"query": [
+						{
+							"key": "by_name",
+							"value": "Lagunitas_Brewing_Co"
+						},
+						{
+							"key": "by_state",
+							"value": "California"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
