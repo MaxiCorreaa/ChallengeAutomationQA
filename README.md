@@ -2,7 +2,7 @@
 Challenge automation qa project for Andina Mercantil
 
 # Para el funcionamiento:
--Clonar repositorio.
+-Clonar repositorio.\n
 -Abrir el proyecto de la carpeta frontend
 -Abrir terminal y ejecutar comando: mvn clean
 -Abrir terminal y ejecutar comando: mvn test
